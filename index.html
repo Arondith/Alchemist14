@@ -150,42 +150,42 @@
     </style>
   </head>
 <body>
-  <!-- Inside your index.html, about-us.html, services.html, etc. -->
-
-
   <div class="popup-container" id="popup" role="dialog" aria-labelledby="popup-title" aria-describedby="popup-desc">
     <div class="popup-box">
       <button class="popup-close" id="closePopup" aria-label="Close pop-up">&times;</button>
       <img src="images/3__1__-_Copy-removebg-preview.png" alt="A&A Logo" class="popup-logo">
-      <div class="popup-title" id="popup-title">✨ Now Reimagined as Alchemists & Architects | Renewed ✨</div>
-      <div class="popup-subtitle" id="popup-desc">Salon Merite Reimagined as <strong>Alchemists & Architects</strong></div>
+      <div class="popup-title" id="popup-title">✨ Salon Merite ✨</div>
+      <div class="popup-subtitle" id="popup-desc">
+        Salon Merite serves as the proud flagship salon for
+        <strong>Alchemists & Architects</strong>. Welcome to the future of hairdressing!
+      </div>
       <p>Experience the artistry and innovation you love, now with a fresh identity.</p>
     </div>
   </div>
   <script>
-    // Show the pop-up when the page loads
-    window.addEventListener('load', () => {
-        const popup = document.getElementById('popup');
-        const closePopup = document.getElementById('closePopup');
-        // Show the pop-up after 2 seconds
-        setTimeout(() => {
-            popup.classList.add('show');
-            document.body.style.overflow = 'hidden'; // Disable scrolling when pop-up is visible
-        }, 2000);
-        // Close the pop-up
-        closePopup.addEventListener('click', () => {
-            popup.classList.remove('show');
-            document.body.style.overflow = 'auto'; // Enable scrolling after pop-up is closed
-        });
-        // Close the pop-up when clicking outside the box
-        popup.addEventListener('click', (e) => {
-            if (e.target === popup) {
+        // Show the pop-up when the page loads
+        window.addEventListener('load', () => {
+            const popup = document.getElementById('popup');
+            const closePopup = document.getElementById('closePopup');
+            // Show the pop-up after 2 seconds
+            setTimeout(() => {
+                popup.classList.add('show');
+                document.body.style.overflow = 'hidden'; // Disable scrolling when pop-up is visible
+            }, 2000);
+            // Close the pop-up
+            closePopup.addEventListener('click', () => {
                 popup.classList.remove('show');
-                document.body.style.overflow = 'auto'; // Enable scrolling
-            }
+                document.body.style.overflow = 'auto'; // Enable scrolling after pop-up is closed
+            });
+            // Close the pop-up when clicking outside the box
+            popup.addEventListener('click', (e) => {
+                if (e.target === popup) {
+                    popup.classList.remove('show');
+                    document.body.style.overflow = 'auto'; // Enable scrolling
+                }
+            });
         });
-    });
-</script>
+    </script>
 </body>
 </html>
 </head>
@@ -193,26 +193,18 @@
   <div data-animation="default" class="navbar w-nav" data-easing2="ease-in" data-easing="ease-out" data-collapse="medium" data-w-id="24d72d9e-8c5a-3f2c-dfa1-88df51c01d47" role="banner" data-no-scroll="1" data-duration="400">
     <div class="nav-container">
       <div class="menu-button w-nav-button"><img loading="lazy" src="https://uploads-ssl.webflow.com/664e180b0893ddfb81e65fa6/664e180b0893ddfb81e65feb_Menu.svg" alt="" class="menu-hamburger-icon"><img loading="lazy" src="https://uploads-ssl.webflow.com/664e180b0893ddfb81e65fa6/664e180b0893ddfb81e65fd9_X%20(1).svg" alt="" class="menu-close-icon"></div>
-     <nav role="navigation" class="nav-menu w-nav-menu">
-  <a href="index" aria-current="page" class="nav-link w-nav-link w--current">home</a>
-  <a href="about-us" class="nav-link w-nav-link">about us</a>
-  <a href="services" class="nav-link w-nav-link">services</a>
-  <a href="contact" class="nav-link w-nav-link">contact</a>
-  <div data-delay="0" data-hover="true" class="dropdown w-dropdown">
-    <div class="dropdown-toggle w-dropdown-toggle">
-      <div class="menu-cta-wrap mobile">
-        <a href="https://webflow.com/templates/designers/wavesdesign" target="_blank" class="link-cta w-inline-block">
-          <div class="text-cta">get for free</div>
-          <div class="fill-cta"></div>
-        </a>
-      </div>
-    </div>
-    <nav class="dropdown-list w-dropdown-list">
-      <a href="contact" class="link-dropdown w-dropdown-link">contact</a>
-    </nav>
-  </div>
-</nav>
-
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">home</a>
+        <a href="about-us.html" class="nav-link w-nav-link">about us</a>
+        <a href="services.html" class="nav-link w-nav-link">services</a>
+        <a href="contact.html" class="nav-link w-nav-link">contact</a>
+        <div class="menu-cta-wrap mobile">
+          <a href="https://www.phorest.com/salon/salonmrite/book/service-selection?showSpecialOffers=false" target="_blank" class="link-cta w-inline-block">
+            <div class="text-cta">BOOK NOW!</div>
+            <div class="fill-cta"></div>
+          </a>
+        </div>
+      </nav>
       <div class="nav-mid">
         <div class="brand-menu-wrap">
           <a href="#" class="brand-link w-nav-brand">
