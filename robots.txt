@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://alchemistsarchitects.com/sitemap.xml
